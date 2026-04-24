@@ -1,0 +1,10 @@
+INHERIT: mkdocs.yml
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+  - glightbox
+  - mermaid2
+  - redirects

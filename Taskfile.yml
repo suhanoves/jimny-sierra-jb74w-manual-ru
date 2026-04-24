@@ -1,0 +1,41 @@
+version: '3'
+
+tasks:
+  install:
+    desc: Создать локальное окружение через uv и установить зависимости
+    cmds:
+      - uv sync
+    sources:
+      - pyproject.toml
+      - mkdocs.yml
+    generates:
+      - .venv/bin/mkdocs
+      - uv.lock
+
+  serve:
+    desc: Запустить локальный сервер документации
+    deps: [install]
+    cmds:
+      - uv run python scripts/dev_server.py --config mkdocs.dev.yml --port 8000
+
+  serve-fast:
+    desc: Запустить локальный сервер с быстрой частичной пересборкой
+    deps: [install]
+    cmds:
+      - NO_MKDOCS_2_WARNING=1 DISABLE_MKDOCS_2_WARNING=true uv run mkdocs serve -f mkdocs.dev.yml --dirtyreload --watch docs --watch mkdocs.yml --watch mkdocs.dev.yml
+
+  build:
+    desc: Собрать статический сайт документации
+    deps: [install]
+    cmds:
+      - NO_MKDOCS_2_WARNING=1 DISABLE_MKDOCS_2_WARNING=true uv run mkdocs build --strict
+
+  clean:
+    desc: Удалить сборку сайта
+    cmds:
+      - rm -rf site
+
+  reset:
+    desc: Удалить окружение uv и артефакты сборки
+    cmds:
+      - rm -rf .venv site uv.lock

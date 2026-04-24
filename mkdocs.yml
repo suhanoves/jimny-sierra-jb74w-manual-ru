@@ -1,0 +1,106 @@
+site_name: Suzuki Jimny JB74W
+site_description: Перевод японского руководства пользователя Suzuki Jimny JB74W
+site_author: Essukhanov
+site_url: https://suhanoves.github.io/jimny-sierra-jb74w-manual-ru/
+repo_url: https://github.com/suhanoves/jimny-sierra-jb74w-manual-ru
+repo_name: suhanoves/jimny-sierra-jb74w-manual-ru
+dev_addr: 127.0.0.1:8000
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Переключить на тёмную тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить на светлую тему
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: material/book-open-page-variant
+    admonition:
+      tip: material/wrench
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - sane_lists
+  - smarty
+  - tables
+  - toc:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+  - glightbox
+  - mermaid2
+  - redirects
+  - minify:
+      minify_html: true
+  - print-site:
+      add_to_navigation: false
+      print_page_title: Версия для печати
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - "Главная": index.md
+  - "Введение": 00-introduction.md
+  - "1. Краткое руководство": 01-quick-guide.md
+  - "2. Обязательно к прочтению: безопасность вождения": 02-safety.md
+  - "3. Перед началом движения": 03-before-driving.md
+  - "4. Во время движения": 04-driving.md
+  - "5. Использование оборудования": 05-equipment.md
+  - "6. Уход за автомобилем": 06-care.md
+  - "7. В экстренной ситуации": 07-emergency.md
+  - "8. Сервисные данные": 08-service-data.md
+  - "9. Указатель": 09-index.md

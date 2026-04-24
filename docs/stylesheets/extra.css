@@ -1,0 +1,34 @@
+.md-typeset,
+.md-typeset .md-typeset__scrollwrap,
+.md-typeset .md-typeset__table {
+  text-align: center;
+}
+
+.md-typeset table:not([class]) {
+  display: inline-table;
+  width: auto;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+}
+
+.md-typeset > :not(table):not(.md-typeset__scrollwrap):not(.md-typeset__table),
+.md-typeset .admonition,
+.md-typeset .md-typeset__table table:not([class]) {
+  text-align: left;
+}
+
+.md-typeset img.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.md-typeset p > a.glightbox:has(> img.center-image):only-child {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

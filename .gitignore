@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+.task/
+.venv/
+site/
+AGENTS.md
+

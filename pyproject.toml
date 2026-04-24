@@ -1,0 +1,20 @@
+[project]
+name = "suzuki-jimny-jb74w-manual"
+version = "0.1.0"
+description = "MkDocs-проект для перевода японского руководства Suzuki Jimny JB74W"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "lunr[languages]>=0.7,<1.0",
+  "mkdocs>=1.6,<2.0",
+  "mkdocs-material>=9.5,<10.0",
+  "mkdocs-mermaid2-plugin>=1.2,<2.0",
+  "mkdocs-print-site-plugin>=2.7,<3.0",
+  "mkdocs-redirects>=1.2,<2.0",
+  "mkdocs-glightbox>=0.4,<1.0",
+  "mkdocs-git-revision-date-localized-plugin>=1.2,<2.0",
+  "mkdocs-minify-plugin>=0.8,<1.0",
+]
+
+[tool.uv]
+package = false
