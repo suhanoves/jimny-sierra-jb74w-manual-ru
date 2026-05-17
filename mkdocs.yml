@@ -30,7 +30,6 @@ theme:
     - navigation.top
     - navigation.instant
     - navigation.tracking
-    - toc.integrate
     - content.code.copy
     - content.tabs.link
     - search.suggest
@@ -81,8 +80,6 @@ plugins:
         - ru
         - en
   - glightbox
-  - mermaid2
-  - redirects
   - minify:
       minify_html: true
   - print-site:

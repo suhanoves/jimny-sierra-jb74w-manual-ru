@@ -4,13 +4,7 @@ tasks:
   install:
     desc: Создать локальное окружение через uv и установить зависимости
     cmds:
-      - uv sync
-    sources:
-      - pyproject.toml
-      - mkdocs.yml
-    generates:
-      - .venv/bin/mkdocs
-      - uv.lock
+      - uv sync --locked
 
   serve:
     desc: Запустить локальный сервер документации
@@ -38,4 +32,4 @@ tasks:
   reset:
     desc: Удалить окружение uv и артефакты сборки
     cmds:
-      - rm -rf .venv site uv.lock
+      - rm -rf .venv site
