@@ -10,7 +10,7 @@ tasks:
     desc: Запустить локальный сервер документации
     deps: [install]
     cmds:
-      - uv run python scripts/dev_server.py --config mkdocs.dev.yml --port 8000
+      - uv run python scripts/dev_server.py --config mkdocs.dev.yml --port 8090
 
   serve-fast:
     desc: Запустить локальный сервер с быстрой частичной пересборкой
@@ -23,6 +23,11 @@ tasks:
     deps: [install]
     cmds:
       - NO_MKDOCS_2_WARNING=1 DISABLE_MKDOCS_2_WARNING=true uv run mkdocs build --strict
+
+  trim-images:
+    desc: Обрезать белые поля у изображений в папке и перезаписать их
+    cmds:
+      - uv run --with pillow python scripts/trim_image_whitespace.py {{.CLI_ARGS}}
 
   clean:
     desc: Удалить сборку сайта
