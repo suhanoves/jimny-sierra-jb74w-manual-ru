@@ -2,8 +2,6 @@ site_name: Suzuki Jimny JB74W
 site_description: Перевод японского руководства пользователя Suzuki Jimny JB74W
 site_author: Essukhanov
 site_url: https://suhanoves.github.io/jimny-sierra-jb74w-manual-ru/
-repo_url: https://github.com/suhanoves/jimny-sierra-jb74w-manual-ru
-repo_name: suhanoves/jimny-sierra-jb74w-manual-ru
 dev_addr: 127.0.0.1:8000
 
 theme:
@@ -35,7 +33,6 @@ theme:
     - search.suggest
     - search.highlight
   icon:
-    repo: material/book-open-page-variant
     admonition:
       tip: material/wrench
 
