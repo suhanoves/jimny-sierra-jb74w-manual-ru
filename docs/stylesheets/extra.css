@@ -19,6 +19,18 @@
   text-align: left;
 }
 
+.md-typeset .manual-toc,
+.md-typeset .manual-toc .md-typeset__scrollwrap,
+.md-typeset .manual-toc .md-typeset__table {
+  display: block;
+  width: 100%;
+}
+
+.md-typeset .manual-toc table:not([class]) {
+  display: table;
+  width: 100%;
+}
+
 .md-typeset img.center-image {
   display: block;
   margin-left: auto;
