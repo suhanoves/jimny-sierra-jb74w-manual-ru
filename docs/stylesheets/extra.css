@@ -19,16 +19,27 @@
   text-align: left;
 }
 
-.md-typeset .manual-toc,
-.md-typeset .manual-toc .md-typeset__scrollwrap,
-.md-typeset .manual-toc .md-typeset__table {
+.md-typeset .manual-index-table {
   display: block;
   width: 100%;
 }
 
-.md-typeset .manual-toc table:not([class]) {
-  display: table;
+.md-typeset .manual-index-table .md-typeset__scrollwrap,
+.md-typeset .manual-index-table .md-typeset__table {
+  display: block;
   width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-typeset .manual-index-table table {
+  display: table !important;
+  width: 100% !important;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .md-typeset img.center-image {
