@@ -8,9 +8,11 @@
 
 ## Поддержать перевод
 
-Если перевод оказался полезен, можно поблагодарить автора и поддержать дальнейшую работу над документацией.
+Если перевод оказался полезен, можно [поддержать переводчика](https://pay.cloudtips.ru/p/1ac62f88) и дальнейшую работу над документацией.
 
-<img src="docs/images/index/support-translation-qr.png" alt="QR-код для поддержки перевода" width="220">
+<a href="https://pay.cloudtips.ru/p/1ac62f88">
+  <img src="docs/images/index/support-translation-qr.png" alt="QR-код для поддержки перевода" width="220">
+</a>
 
 ## Локальный запуск
 

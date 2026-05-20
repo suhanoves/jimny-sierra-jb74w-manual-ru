@@ -7,9 +7,9 @@
 
 ## Поддержать перевод
 
-Если этот перевод оказался полезен, можно поблагодарить автора и поддержать дальнейшую работу над документацией.
+Если этот перевод оказался полезен, можно [поддержать переводчика](https://pay.cloudtips.ru/p/1ac62f88) и дальнейшую работу над документацией.
 
-![QR-код для поддержки перевода](images/index/support-translation-qr.png){ .center-image width="220" }
+[![QR-код для поддержки перевода](images/index/support-translation-qr.png){ .center-image width="220" }](https://pay.cloudtips.ru/p/1ac62f88)
 
 <div class="manual-toc" markdown>
 
