@@ -7,6 +7,7 @@ dev_addr: 127.0.0.1:8000
 theme:
   name: material
   language: ru
+  font: false
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -83,8 +84,21 @@ plugins:
       add_to_navigation: false
       print_page_title: Версия для печати
 
+hooks:
+  - scripts/offline_pwa.py
+
+extra:
+  offline_pwa:
+    enabled: true
+    precache_images: true
+    precache_files: false
+    precache_print_page: false
+
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/pwa-register.js
 
 nav:
   - "Главная": index.md
