@@ -55,3 +55,61 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.md-typeset .vehicle-settings-table {
+  display: block;
+  width: 100%;
+  overflow-x: visible;
+}
+
+.md-typeset .vehicle-settings-table .md-typeset__scrollwrap,
+.md-typeset .vehicle-settings-table .md-typeset__table {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-typeset .vehicle-settings-table table {
+  display: table !important;
+  width: 100% !important;
+  min-width: 0;
+  table-layout: fixed;
+}
+
+.md-typeset .vehicle-settings-table th:nth-child(1),
+.md-typeset .vehicle-settings-table td:nth-child(1) {
+  width: 8%;
+}
+
+.md-typeset .vehicle-settings-table th:nth-child(2),
+.md-typeset .vehicle-settings-table td:nth-child(2) {
+  width: 23%;
+}
+
+.md-typeset .vehicle-settings-table th:nth-child(3),
+.md-typeset .vehicle-settings-table td:nth-child(3) {
+  width: 31%;
+}
+
+.md-typeset .vehicle-settings-table th:nth-child(4),
+.md-typeset .vehicle-settings-table td:nth-child(4) {
+  width: 38%;
+}
+
+.md-typeset .direct-choice-table th:nth-child(1),
+.md-typeset .direct-choice-table td:nth-child(1) {
+  width: 10%;
+}
+
+.md-typeset .direct-choice-table th:nth-child(2),
+.md-typeset .direct-choice-table td:nth-child(2) {
+  width: 32%;
+}
+
+.md-typeset .direct-choice-table th:nth-child(3),
+.md-typeset .direct-choice-table td:nth-child(3) {
+  width: 58%;
+}
